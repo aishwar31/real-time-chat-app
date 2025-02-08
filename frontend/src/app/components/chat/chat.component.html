@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <span>Real-Time Chat</span>
+</mat-toolbar>
+
+<div class="chat-container">
+    <mat-card class="chat-box">
+        <mat-list>
+            <mat-list-item *ngFor="let msg of messages" class="message">
+                <span>{{ msg.text }}</span>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+
+    <div class="input-box">
+        <mat-form-field class="message-input" appearance="outline">
+            <input matInput [(ngModel)]="newMessage" placeholder="Type a message..." />
+        </mat-form-field>
+        <button mat-raised-button color="accent" (click)="sendMessage()">Send</button>
+    </div>
+</div>
