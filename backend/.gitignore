@@ -1,0 +1,15 @@
+# Ignore Angular cache & dependencies
+.angular/
+node_modules/
+
+# Ignore build output except /docs for GitHub Pages
+dist/
+!docs/
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore logs & environment files
+*.log
+.env
